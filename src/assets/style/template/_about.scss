@@ -1,0 +1,121 @@
+.about{
+  background-color: #333333;
+  padding: 90px 0 60px 0;
+  &-info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    height: 200px;
+  }
+  &-photo{
+    width: 120px;
+    height: 120px;
+  }
+  &-text{
+    width: 70%;
+    line-height: 26px;
+    text-align: justify;
+  }
+  &-description{
+    color: #e8e8e8;
+  }
+  &-title{
+    color: #fff;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 32px;
+  }
+}
+.cards {
+  margin: auto;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  // background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
+}
+
+.card{
+  position: relative;
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.skills {
+  text-align: center;
+}
+
+.percent{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  z-index: 10;
+  & > svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+    & > circle {
+      width: 100%;
+      height: 100%;
+      fill: none;
+      stroke-width: 10;
+      stroke-linecap: round;
+      transform: translate(5px, 5px);
+      &:last-child{
+        stroke: #FF5252;
+        stroke-dasharray: 440;
+      }
+    }
+  }
+}
+
+.number {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    & > h2 {
+      color: #e8e8e8;
+      font-weight: 700;
+      font-size: 40px;
+      transition: 0.5s;
+      & > span {
+        font-size: 24px;
+        color: #e8e8e8;
+        transition: 0.5s;
+      }
+    }
+}
+
+
+.text{
+  position: relative;
+  margin-top: 20px;
+  color: #e8e8e8;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}

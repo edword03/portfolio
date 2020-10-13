@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    style @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap')
+  body
+    header.header
+      .container
+        .row
+          .lang
+            ul.lang-list
+              li.lang-list__li ru
+              li.lang-list__li en
+          nav.menu
+            ul.list-items
+              li.list-item
+                a.link-item(href="#home") Главная
+              li.list-item
+                a.link-item(href="#") Обо мне
+              li.list-item
+                a.link-item(href="#") Мои работы
+              li.list-item
+                a.link-item(href="#") Контакты
+          .socials 
+            a.social-link(href="https://github.com/edword03")
+              img.social-link__img(src="../img/icon/vk-social-network-logo.svg", alt="vk")
+            a.social-link(href="https://github.com/edword03")
+              img.social-link__img(src="../img/icon/iconmonstr-github-1.svg", alt="github")
+            a.social-link(href="#")
+    main#home
+      .description
+        .description-text
+          p.description-text__p Кто я?
+          h1.description-text__h1 Я front-end разработчик
+          p.description-text__p Frontend разработчик — это верстальщик и программист в одном лице, герой стиля и кода, создающий пользовательский интерфейс.
+      p.scroll
+        a.scroll-down__a(href="#")
+          img.scroll-down__img(src="../img/icon/arrow-down.svg", alt="")
+    section.about
+      .container.about-container
+        .about-info
+          .about-photo
+          .about-text
+            h2.about-title Обо мне
+            p.about-description Меня зову Дмитрий Веретенников. Я frontend-разработчик из города Ижевска. Люблю веб-разработку, активно учусь и изучаю новые стандарты. Неплохо владею версткой, знаю JavaScript. Хочу стать middle front-end разработчиком. Свободное время люблю посвящать себе, делать личные проекты или изучать что-то новое в веб-разработке.
+        .about-skills
+          h2.about-title.skills Мои навыки
+          .cards
+            .card
+              .box
+                .percent
+                  svg
+                    circle(cx="70" cy="70" r="70")
+                    circle(cx="70" cy="70" r="70" style="stroke-dashoffset: calc(44);")
+                  .number
+                    h2 90
+                      span %
+                h2.text html
+            .card
+              .box
+                .percent
+                  svg
+                    circle(cx="70" cy="70" r="70")
+                    circle(cx="70" cy="70" r="70" style="stroke-dashoffset: calc(130);")
+                  .number
+                    h2 70
+                      span %
+                h2.text css
+            .card
+              .box
+                .percent
+                  svg
+                    circle(cx="70" cy="70" r="70")
+                    circle(cx="70" cy="70" r="70" style="stroke-dashoffset: calc(176);")
+                  .number
+                    h2 60
+                      span %
+                h2.text JavaScript
+    section.works 
+      .container
+        h2.works Мои работы
+        .works-cards
+          .works-card
+            .works-img
+              img(src="../img/works/club.png", alt="")
+            .works-text
+              
+          .works-card
+          .works-card
+          .works-card
+          .works-card
+          .works-card
+          .works-card
+
