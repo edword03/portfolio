@@ -1,8 +1,6 @@
 .description {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(center, center);
   height: 800px;
   background: #131313  url('../img/bck_1.jpg') center/cover no-repeat fixed;
   background-position: 0px 0px;

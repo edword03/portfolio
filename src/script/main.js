@@ -1,30 +1,67 @@
-const btn = document.getElementById('search-it'),
-    inputVal = document.getElementById('search');
+export default class Portfolio {
+	constructor(header, arrowDown, menu) {
+		this.header = document.querySelector(header);
+		this.arrowDown = document.querySelector(arrowDown);
+		this.menu = document.querySelector(menu);
+	}
+	showHeader() {
+		if (window.pageYOffset >= 715) {
+			this.header.style.display = 'block';
+		} else {
+			this.header.style.display = 'none';
+		}
+	}
 
-const sendData =() => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => resolve(), 10000);
-    });
-};  
-btn.addEventListener('click', (e) => {
-    e.preventDefault();
+	arrowMove(e) {
+		e.preventDefault();
+		this.arrowDown.scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		});
+	}
 
-    sendData()
-        .then(arr => {
-            console.log('i m here');
-            const div = document.createElement('div');
-            div.style.cssText = `background-color: #ff4; 
-                                    width: 500px;
-                                    height: 500px`;
+	showScroll(event, target) {
+		event.preventDefault();
+		const link = target.getAttribute('href').substring(1);
+		document.getElementById(link).scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		});
+	}
 
-            document.body.append(div);
-            div.textContent = inputVal.value;
-        })
-        .catch(err => console.err(err));
-});
+	toggleMenu() {
+		this.menu.classList.toggle('hidden-menu');
+	}
 
-inputVal.addEventListener('input', e => {
-    let target = e.target;
+	headerLink(e) {
+		const target = e.target;
 
-    target.value = target.value.replace(/[^\D]/g, '');
-});
+		if (target.matches('a[href*="#"')) {
+			this.showScroll(e, target);
+		} else if (target.matches('.modal-toggle') || target.matches('.burger')) {
+			this.toggleMenu();
+		}
+	}
+
+	menuLinksMove(e) {
+		e.preventDefault();
+		const target = e.target;
+
+		if (target.matches('a[href*="#"')) {
+			this.showScroll(e, target);
+			this.toggleMenu();
+		}
+		if (target.matches('.close')) {
+			this.toggleMenu();
+		}
+	}
+
+
+	events() {
+		window.addEventListener('scroll', this.showHeader.bind(this));
+		this.arrowDown.addEventListener('click', this.arrowMove.bind(this));
+		this.header.addEventListener('click', e => this.headerLink(e));
+		this.menu.addEventListener('click', e => this.menuLinksMove(e));
+	}
+
+}

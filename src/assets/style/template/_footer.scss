@@ -1,0 +1,34 @@
+// @import Icon24LogoVk from '@vkontakte/icons/dist/24/logo_vk';
+
+.footer{
+  background-color: #191919;
+  padding: 40px 0;
+  &-block{
+    @include flex(space-between, center)
+  }
+}
+
+.contact{
+  &-links{
+    display: flex;
+  }
+  &-link{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    text-decoration: none;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+    & img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  &-copyright{
+    font-size: 14px;
+    line-height: 30px;
+    color: #fff;
+  }
+}

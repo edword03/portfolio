@@ -1,7 +1,11 @@
 // @import './variable.scss';
+@import 'template/mixin';
 @import 'normalize.scss';
 @import 'template/components';
 @import 'template/header';
 @import 'template/main-page';
 @import 'template/about';
 @import 'template/works';
+@import 'template/footer';
+
+@import 'template/media';

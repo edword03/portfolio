@@ -1,5 +1,5 @@
 .header{
-  display: block;
+  display: none;
   padding: 25px 0 25px 0;
   background-color: #fff;
   left: 0;
@@ -8,6 +8,7 @@
   position: fixed;
   z-index: 99;
   box-shadow: 0 0 28px rgba(0, 0, 0, 0.7);
+  transition: all 0.3 ease-in-out;
 }
 
 .link-item {
@@ -42,8 +43,7 @@
 }
 
 .socials {
-  display: flex;
-  align-items: center;
+  @include flex(space-between, center);
   position: relative;
   max-width: 50px;
   width: 6.71rem;
@@ -83,3 +83,94 @@
   }
 }
 
+.mobile-btn{
+  display: none;
+  cursor: pointer;
+}
+
+.modal-toggle{
+  outline: none !important;
+  border: none !important;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.burger{
+  background: #222;
+  display: block;
+  width: 35px;
+  height: 4px;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+  &:not(:last-child) {
+    margin-bottom: 6px;
+  }
+}
+
+.popup-menu{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999;
+  background-color: #fff;
+  & ul {
+    margin: auto;
+    list-style: none;
+  }
+  & li {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  & a {
+    color: #333333;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+.close{
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  transition: .3s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+  &:before, &:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 3px;
+    background-color: #222;
+  }
+  &::before{
+    transform: rotate(45deg);
+  }
+  &::after{
+    transform: rotate(-45deg);
+  }
+  &-menu-btn{
+    position: absolute;
+    text-align: right;
+    top: 25px;
+    right: 0;
+  }
+}
+
+.hidden-menu{
+  display: none;
+}
