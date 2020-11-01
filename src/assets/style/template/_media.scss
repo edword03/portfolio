@@ -41,6 +41,34 @@
   }
 }
 
+@media screen and (max-width: 615px) {
+  .modal-card{
+    width: 85vw;
+    
+  }
+  .modal-arrow{
+    top: 30%;
+  }
+
+  .modal-text__p{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .modal-text{
+    h3{
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+      max-width: 300px;
+    }
+  }
+
+  .modal-links{
+    padding: 18px 10px;
+  }
+}
+
 @media screen and (max-width: 460px) {
   .footer-block{
     display: block;

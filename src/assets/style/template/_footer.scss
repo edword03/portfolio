@@ -32,3 +32,18 @@
     color: #fff;
   }
 }
+
+.fa{
+  display: inline-block;
+  font-size: inherit;
+  width: 32px;
+  height: 32px;
+  &-vk{
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='32' height='32'%3e%3cpath fill='none' d='M0 0h24v24H0z'/%3e%3cstyle%3e%3c/style%3e%3cpath d='M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z' fill='rgba(255,255,255,1)'/%3e%3c/svg%3e");
+  }
+  &-vk:hover{
+    path, svg{
+      fill: #3b5998
+    }
+  }
+}

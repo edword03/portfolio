@@ -12,9 +12,13 @@
       margin-bottom: 15px;
     }
     &__p{
+      text-align: justify;
       font-size: 18px;
       max-width: 60%;
       margin: 0 auto;
+    }
+    &__title{
+      text-align: center;
     }
     &__h1{
       text-transform: uppercase;
@@ -43,26 +47,30 @@
 
 #home{
   position: relative;
-}
-.scroll-down{
-  &__a{
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    padding: 11px;
-    left: 50%;
-    bottom: 40px;
-    z-index: 22;
-    text-decoration: none;
-    border-radius: 50%;
-    background-color: #fff;
-    transition: all .3s ease-in-out;
-    &:hover{
-      background-color: #FF8C00;
+  & .scroll{
+    display: flex;
+    justify-content: center;
+    &-down{
+      &__a{
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        padding: 11px;
+        bottom: 40px;
+        z-index: 22;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: #fff;
+        transition: all .3s ease-in-out;
+        &:hover{
+          background-color: #FF8C00;
+        }
+    }
+    &__img{
+      max-width: 100%;
+      vertical-align: middle;
     }
   }
-  &__img{
-    max-width: 100%;
-    vertical-align: middle;
-  }
 }
+}
+

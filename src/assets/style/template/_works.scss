@@ -3,16 +3,20 @@
   padding: 90px 0 60px 0;
   &-cards{
     @include flex(center, center);
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   &-card{
     cursor: pointer;
     width: 350px;
     background-color: #fff;
     margin: 40px 25px;
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
     &:hover{
-      box-shadow: 0 20px 18px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 0 20px 18px rgba(0, 0, 0, 0.5);
+              box-shadow: 0 20px 18px rgba(0, 0, 0, 0.5);
     }
   }
   &-img{
@@ -46,8 +50,12 @@
     }
   }
   &-links{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-color: #111;
     padding: 18px 36px;
     font-weight: bold;
@@ -68,7 +76,11 @@
         height: 0;
         position: absolute;
         left: 50%;
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+        -webkit-transition: width .3s ease-in-out;
+        -o-transition: width .3s ease-in-out;
         transition: width .3s ease-in-out;
       }
       &:hover{

@@ -3,7 +3,7 @@ html(lang="en")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Document
+    title WebDeveloper - Dmitriy Veretennikov
     style @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap')
     link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css")
   body
@@ -25,20 +25,20 @@ html(lang="en")
               li.list-item
                 a.link-item(href="#contact") Контакты
           .socials 
-            a.social-link(href="https://github.com/edword03")
+            a.social-link(href="https://vk.com/ves_ed_it")
               img.social-link__img(src="../img/icon/vk-social-network-logo.svg", alt="vk")
             a.social-link(href="https://github.com/edword03")
               img.social-link__img(src="../img/icon/iconmonstr-github-1.svg", alt="github")
             a.social-link(href="#")
           .mobile-btn
-            button.modal-toggle
+            button.menu-toggle
               span.burger
               span.burger
               span.burger
     main#home
       .description
         .description-text
-          p.description-text__p Кто я?
+          p.description-text__title Кто я?
           h1.description-text__h1 Я front-end разработчик
           p.description-text__p Frontend разработчик — это верстальщик и программист в одном лице, герой стиля и кода, создающий пользовательский интерфейс.
       p.scroll
@@ -88,67 +88,67 @@ html(lang="en")
       .container
         h2.works-title Мои работы
         .works-cards
-          .works-card
-            img.works-img(src="../img/works/photo2.jpg", alt="")
-            .works-text
-              h3 Сеть фитнес клубов Тело
-              p.works-text__p JavaScript, Webpack, Babel
-              .works-links
-                a(href="https://edword03.github.io/diplom_middle/") Страница
-                a(href="https://github.com/edword03/diplom_middle") github
-          .works-card
-            img.works-img(src="../img/works/flat.jpg", alt="")
-            .works-text
-              h3 Услуги по 3D моделированию
-              p.works-text__p JavaScript, Webpack, Babel
-              .works-links
-                a(href="https://edword03.github.io/Glo3D/") Страница
-                a(href="https://github.com/edword03/Glo3D") github
-          .works-card
-            img.works-img(src="../img/works/Screenshot_25.png", alt="")
-            .works-text
-              h3 Repair Design Project
-              p.works-text__p HTML, CSS, Sass, JQuery
-              .works-links
-                a(href="https://edword03.github.io/homework.github.io/") Страница
-                a(href="https://github.com/edword03/homework.github.io") github
-          .works-card
-            img.works-img(src="../img/works/calcMoney.jpg", alt="")
-            .works-text
-              h3 Калькулятор личного бюджета
-              p.works-text__p JavaScript, ООП
-              .works-links
-                a(href="https://edword03.github.io/JS-14.0/") Страница
-                a(href="https://github.com/edword03/JS-14.0") github
-          .works-card
-            img.works-img(src="../img/works/todoList.jpg", alt="")
-            .works-text
-              h3 ToDo List
-              p.works-text__p JavaScript, ООП
-              .works-links
-                a(href="https://edword03.github.io/ToDo-List/") Страница
-                a(href="https://github.com/edword03/ToDo-List/tree/ToDo_OOP") github
-          .works-card
-            img.works-img(src="../img/works/itunes.jpg", alt="")
-            .works-text
-              h3 iTunes
-              p.works-text__p JavaScript
-              .works-links
-                a(href="https://edword03.github.io/iTunes/") Страница
-                a(href="https://github.com/edword03/iTunes") github
+          .works-card.works-card-1#m1
+            img.works-img#m1(src="../img/works/photo2.jpg", alt="")
+            .works-text#m1
+              h3#m1 Сеть фитнес клубов Тело
+              p.works-text__p#m1 JavaScript, Webpack, Babel
+              .works-links#m1
+                a(href="https://edword03.github.io/diplom_middle/" target="_blank") Страница
+                a(href="https://github.com/edword03/diplom_middle" target="_blank") github
+          .works-card.works-card-2#m2
+            img.works-img#m2(src="../img/works/flat.jpg", alt="")
+            .works-text#m2
+              h3#m2 Услуги по 3D моделированию
+              p.works-text__p#m2 JavaScript, Webpack, Babel
+              .works-links#m2
+                a#m2(href="https://edword03.github.io/Glo3D/" target="_blank") Страница
+                a#m2(href="https://github.com/edword03/Glo3D" target="_blank") github
+          .works-card.works-card-3#m3
+            img.works-img#m3(src="../img/works/Screenshot_25.png", alt="")
+            .works-text#m3
+              h3#m3 Repair Design Project
+              p.works-text__p#m3 HTML, CSS, Sass, JQuery
+              .works-links#m3
+                a#m3(href="https://edword03.github.io/homework.github.io/" target="_blank") Страница
+                a#m3(href="https://github.com/edword03/homework.github.io" target="_blank") github
+          .works-card.works-card-4#m4
+            img.works-img#m4(src="../img/works/calcMoney.jpg", alt="")
+            .works-text#m4
+              h3#m4 Калькулятор личного бюджета
+              p.works-text__p#m4 JavaScript, ООП
+              .works-links#m4
+                a#m4(href="https://edword03.github.io/JS-14.0/" target="_blank") Страница
+                a#m4(href="https://github.com/edword03/JS-14.0" target="_blank") github
+          .works-card.works-card-5#m5
+            img.works-img#m5(src="../img/works/todoList.jpg", alt="")
+            .works-text#m5
+              h3#m5 ToDo List
+              p.works-text__p#m5 JavaScript, ООП
+              .works-links#m5
+                a#m5(href="https://edword03.github.io/ToDo-List/" target="_blank") Страница
+                a#m5(href="https://github.com/edword03/ToDo-List/tree/ToDo_OOP" target="_blank") github
+          .works-card.works-card-6#m6
+            img.works-img#m6(src="../img/works/itunes.jpg", alt="")
+            .works-text#m6
+              h3#m6 iTunes
+              p.works-text__p#m6 JavaScript
+              .works-links#m6
+                a#m6(href="https://edword03.github.io/iTunes/" target="_blank") Страница
+                a#m6(href="https://github.com/edword03/iTunes" target="_blank") github
     footer#contact.footer.contact
       .container
         .footer-block
           p.contact-copyright © 2020 Веретенников Д. А.
           .contact-links 
             a.contact-link(href="https://vk.com/ves_ed_it")
-              img(src="../img/icon/vk_logo.svg", alt="")
+              <?xml version="1.0" ?><svg width="35px" height="35px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#fff;stroke:#fff;stroke-miterlimit:10;stroke-width:2px;transition: 0.3s}.cls-1:hover{fill:#4a76a8;stroke:#4a76a8}</style></defs><title/><g data-name="Layer 2" id="Layer_2"><path class="cls-1" d="M50.51,33.68l9.37-15.07a.79.79,0,0,0-.67-1.21H48.83a2.73,2.73,0,0,0-2.32,1.29L38.63,31.36H37.19V17.2a.58.58,0,0,0-.58-.58H24a.43.43,0,0,0-.36.65l2.07,3.39v11c-3.61-.17-8.31-8.88-10.72-14a.55.55,0,0,0-.51-.32H4.59a.58.58,0,0,0-.55.77C7.44,27.51,15.05,40,23,45.85a8.16,8.16,0,0,0,4.84,1.53h9.37V40.66l1.46-1.25L46.21,47a1.19,1.19,0,0,0,.85.35h9.77A3.06,3.06,0,0,0,59,42.16Z"/></g></svg>
             a.contact-link(href="https://www.facebook.com/profile.php?id=100008325649304")
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z" fill="rgba(255,255,255,1)"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0h24v24H0z"/><style>.fb-1:hover{fill:#3b5998;transition: 0.3s}</style><path class="fb-1" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z" style="fb:hover{fill: #3b5998}" fill="rgba(255,255,255,1)"/></svg>
             a.contact-link(href="https://t.me/edword03")
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-3.11-8.83l.013-.007.87 2.87c.112.311.266.367.453.341.188-.025.287-.126.41-.244l1.188-1.148 2.55 1.888c.466.257.801.124.917-.432l1.657-7.822c.183-.728-.137-1.02-.702-.788l-9.733 3.76c-.664.266-.66.638-.12.803l2.497.78z" fill="rgba(255,255,255,1)"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0h24v24H0z"/><style>.telegram:hover{fill:#28a8e9;transition: 0.3s;}</style><path class="telegram" d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-3.11-8.83l.013-.007.87 2.87c.112.311.266.367.453.341.188-.025.287-.126.41-.244l1.188-1.148 2.55 1.888c.466.257.801.124.917-.432l1.657-7.822c.183-.728-.137-1.02-.702-.788l-9.733 3.76c-.664.266-.66.638-.12.803l2.497.78z" fill="rgba(255,255,255,1)"/></svg>
             a.contact-link(href="")
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0h24v24H0z"/><path d="M2.004 22l1.352-4.968A9.954 9.954 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.004 22zM8.391 7.308a.961.961 0 0 0-.371.1 1.293 1.293 0 0 0-.294.228c-.12.113-.188.211-.261.306A2.729 2.729 0 0 0 6.9 9.62c.002.49.13.967.33 1.413.409.902 1.082 1.857 1.971 2.742.214.213.423.427.648.626a9.448 9.448 0 0 0 3.84 2.046l.569.087c.185.01.37-.004.556-.013a1.99 1.99 0 0 0 .833-.231c.166-.088.244-.132.383-.22 0 0 .043-.028.125-.09.135-.1.218-.171.33-.288.083-.086.155-.187.21-.302.078-.163.156-.474.188-.733.024-.198.017-.306.014-.373-.004-.107-.093-.218-.19-.265l-.582-.261s-.87-.379-1.401-.621a.498.498 0 0 0-.177-.041.482.482 0 0 0-.378.127v-.002c-.005 0-.072.057-.795.933a.35.35 0 0 1-.368.13 1.416 1.416 0 0 1-.191-.066c-.124-.052-.167-.072-.252-.109l-.005-.002a6.01 6.01 0 0 1-1.57-1c-.126-.11-.243-.23-.363-.346a6.296 6.296 0 0 1-1.02-1.268l-.059-.095a.923.923 0 0 1-.102-.205c-.038-.147.061-.265.061-.265s.243-.266.356-.41a4.38 4.38 0 0 0 .263-.373c.118-.19.155-.385.093-.536-.28-.684-.57-1.365-.868-2.041-.059-.134-.234-.23-.393-.249-.054-.006-.108-.012-.162-.016a3.385 3.385 0 0 0-.403.004z" fill="rgba(255,255,255,1)"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"><path fill="none" d="M0 0h24v24H0z"/><style>.whatsapp:hover{fill:#43d854;transition: 0.3s;}</style><path class="whatsapp" d="M2.004 22l1.352-4.968A9.954 9.954 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.004 22zM8.391 7.308a.961.961 0 0 0-.371.1 1.293 1.293 0 0 0-.294.228c-.12.113-.188.211-.261.306A2.729 2.729 0 0 0 6.9 9.62c.002.49.13.967.33 1.413.409.902 1.082 1.857 1.971 2.742.214.213.423.427.648.626a9.448 9.448 0 0 0 3.84 2.046l.569.087c.185.01.37-.004.556-.013a1.99 1.99 0 0 0 .833-.231c.166-.088.244-.132.383-.22 0 0 .043-.028.125-.09.135-.1.218-.171.33-.288.083-.086.155-.187.21-.302.078-.163.156-.474.188-.733.024-.198.017-.306.014-.373-.004-.107-.093-.218-.19-.265l-.582-.261s-.87-.379-1.401-.621a.498.498 0 0 0-.177-.041.482.482 0 0 0-.378.127v-.002c-.005 0-.072.057-.795.933a.35.35 0 0 1-.368.13 1.416 1.416 0 0 1-.191-.066c-.124-.052-.167-.072-.252-.109l-.005-.002a6.01 6.01 0 0 1-1.57-1c-.126-.11-.243-.23-.363-.346a6.296 6.296 0 0 1-1.02-1.268l-.059-.095a.923.923 0 0 1-.102-.205c-.038-.147.061-.265.061-.265s.243-.266.356-.41a4.38 4.38 0 0 0 .263-.373c.118-.19.155-.385.093-.536-.28-.684-.57-1.365-.868-2.041-.059-.134-.234-.23-.393-.249-.054-.006-.108-.012-.162-.016a3.385 3.385 0 0 0-.403.004z" fill="rgba(255,255,255,1)"/></svg>
     nav.popup-menu.hidden-menu
       .close-menu-btn
         a.close(href="")
@@ -161,3 +161,137 @@ html(lang="en")
           a.link-item(href="#works") Мои Работы
         li.scroll
           a.link-item(href="#contact") Контакты
+      //- спортзал
+    .modal-work#card-1
+      .modal-card
+        .modal-close
+          img.close-icon(src="../img/icon/close-icon.png", alt="")
+        .modal-slider
+          .modal-arrow.modal-arrow-prev
+          img.modal-img(src="../img/works/photo2.jpg", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider1/Body1.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider1/Body2.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider1/Body3.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider1/Body4.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider1/Body5.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider1/Body6.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider1/Body7.png", alt="")
+          span.modal-counter <span id="s1">1</span> / <span id="s2">8</span>
+          .modal-arrow.modal-arrow-next
+        .modal-text
+          h3 Сеть фитнес клубов Тело
+          p.modal-text__p Дипломная работа на курсе JavaScript от Glo Academy. На этой работе использовал стек технологий: JavaScript, Webpack, Babel, полифилы и тд. <br> Работа заняла в общей сложности 4-5 дней. Основная сложность заключалась в валидации форм на сайте и реализации отправки данных с форм с помощью fetch.
+          .modal-links
+            a(href="https://edword03.github.io/diplom_middle/") Страница
+            a(href="https://github.com/edword03/diplom_middle") github
+
+    //- glo 3D
+    .modal-work#card-2
+      .modal-card
+        .modal-close
+          img.close-icon(src="../img/icon/close-icon.png", alt="")
+        .modal-slider
+          .modal-arrow.modal-arrow-prev
+          img.modal-img(src="../img/works/flat.jpg", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider2/3d-1.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider2/3d-2.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider2/3d-3.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider2/3d-4.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider2/3d-5.png", alt="")
+          span.modal-counter <span id="s1">1</span> / <span id="s2">9</span>
+          .modal-arrow.modal-arrow-next
+        .modal-text
+          h3 Услуги по 3D моделированию
+          p.modal-text__p Используемые технологии: JavaScript, Webpack, Babel, polyfills. По ходу курса использовали многие темы JavaScript: делегирование событий, fetch, promise, XMLHttpRequest, валидация форм и др.
+          .modal-links
+            a(href="https://edword03.github.io/Glo3D/") Страница
+            a(href="https://github.com/edword03/Glo3D") github
+
+    //- repair desing project
+    .modal-work#card-3
+      .modal-card
+        .modal-close
+          img.close-icon(src="../img/icon/close-icon.png", alt="")
+        .modal-slider
+          .modal-arrow.modal-arrow-prev
+          img.modal-img(src="../img/works/Screenshot_25.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider3/repair1.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider3/repair2.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider3/repair3.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider3/repair4.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider3/repair5.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider3/repair6.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider3/repair7.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider3/repair8.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider3/repair9.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider3/repair10.png", alt="")
+          span.modal-counter <span id="s1">1</span> / <span id="s2">1</span>
+          .modal-arrow.modal-arrow-next
+        .modal-text
+          h3 Repair Design Project
+          p.modal-text__p Стек технологий: HTML, CSS, Sass, JQuery, PHP, плагины для JQuery. С помощью PHP и PHPmailer происходила отправка даннных формы на почту.
+          .modal-links
+            a(href="https://edword03.github.io/homework.github.io/") Страница
+            a(href="https://github.com/edword03/homework.github.io") github  
+
+    //- calculator 
+    .modal-work#card-4
+      .modal-card
+        .modal-close
+          img.close-icon(src="../img/icon/close-icon.png", alt="")
+        .modal-slider
+          .modal-arrow.modal-arrow-prev
+          img.modal-img(src="../img/works/calcMoney.jpg", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider4/calc1.png", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider4/calc2.png", alt="")
+          span.modal-counter <span id="s1">1</span> / <span id="s2">6</span> 
+          .modal-arrow.modal-arrow-next
+        .modal-text
+          h3 Калькулятор личного бюджета
+          p.modal-text__p JavaScript, ООП
+          .modal-links
+            a(href="https://edword03.github.io/JS-14.0/") Страница
+            a(href="https://github.com/edword03/JS-14.0") github
+
+    //- ToDo list
+    .modal-work#card-5
+      .modal-card
+        .modal-close
+          img.close-icon(src="../img/icon/close-icon.png", alt="")
+        .modal-slider
+          .modal-arrow.modal-arrow-prev
+          img.modal-img(src="../img/works/todoList.jpg", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider5/todo1.jpg", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider5/todo2.jpg", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider5/todo3.jpg", alt="")
+          span.modal-counter <span id="s1">1</span>  / <span id="s2">8</span> 
+          .modal-arrow.modal-arrow-next
+        .modal-text
+          h3 ToDo List
+          p.modal-text__p JavaScript, ООП, LocalStorage. Все списоки дел сохранялись в локальное хранилище localStorage. И при перезагрузке список дел не терялся, а оставался на месте.
+          .modal-links
+            a(href="https://edword03.github.io/ToDo-List/" target="_blank") Страница
+            a(href="https://github.com/edword03/ToDo-List/tree/ToDo_OOP" target="_blank") github
+
+    //- iTunes
+    .modal-work#card-6
+      .modal-card
+        .modal-close
+          img.close-icon(src="../img/icon/close-icon.png", alt="")
+        .modal-slider
+          .modal-arrow.modal-arrow-prev
+          img.modal-img(src="../img/works/itunes.jpg", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider6/itunes1.jpg", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider6/itunes2.jpg", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider6/itunes3.jpg", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider6/itunes4.jpg", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider6/itunes5.jpg", alt="")
+          img.modal-img.modal-toggle(src="../img/modals-photo/slider6/itunes6.jpg", alt="")
+          span.modal-counter <span id="s1">1</span> / <span id="s2">6</span>
+          .modal-arrow.modal-arrow-next
+        .modal-text
+          h3 iTunes
+          p.modal-text__p JavaScript
+          .modal-links
+            a(href="https://edword03.github.io/iTunes/" target="_blank") Страница
+            a(href="https://github.com/edword03/iTunes" target="_blank") github                          
