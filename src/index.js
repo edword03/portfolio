@@ -4,7 +4,7 @@ import 'dom-node-polyfills';
 
 import Portfolio from './script/main.js';
 
-const getPortfolio = new Portfolio('.header', '.scroll-down__a', '.popup-menu', '.works-cards');
+const getPortfolio = new Portfolio('.header', '.scroll-down__a', '.popup-menu', '.works-cards', '.link-top');
 getPortfolio.events();
 
 

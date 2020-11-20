@@ -1,11 +1,12 @@
 import Slider from "./slider";
 
 export default class Portfolio {
-	constructor(header, arrowDown, menu, works) {
+	constructor(header, arrowDown, menu, works, arrowUp) {
 		this.header = document.querySelector(header);
 		this.arrowDown = document.querySelector(arrowDown);
 		this.menu = document.querySelector(menu);
-		this.works = document.querySelector(works);
+    this.works = document.querySelector(works);
+    this.arrowUp = document.querySelector(arrowUp);
     this.isResizeble = false;
     this.slide1 = new Slider('#card-1');
     this.slide2 = new Slider('#card-2');
@@ -198,7 +199,16 @@ export default class Portfolio {
 		this.arrowDown.addEventListener('click', this.arrowMove.bind(this));
 		this.header.addEventListener('click', e => this.headerLink(e));
 		this.menu.addEventListener('click', e => this.menuLinksMove(e));
-		this.works.addEventListener('click', e => this.openModal(e));
-	}
+    this.works.addEventListener('click', e => this.openModal(e));
+    this.arrowUp.addEventListener('click', e => this.toUp(e))
+  }
+  
+  toUp( event){
+    event.preventDefault();
+    window.scrollTo({
+      behavior: 'smooth',
+      top: 0,
+    })
+  }
 
 }
